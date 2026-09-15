@@ -1,14 +1,20 @@
-// Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
+// Native dragging can consume DOM pointerup. Read only the left button.
 #[tauri::command]
-fn greet(name: &str) -> String {
-    format!("Hello, {}! You've been greeted from Rust!", name)
+async fn left_mouse_down() -> bool {
+    #[cfg(target_os = "windows")]
+    {
+        use windows_sys::Win32::UI::Input::KeyboardAndMouse::{GetAsyncKeyState, VK_LBUTTON};
+        // SAFETY: This function takes a virtual-key code, with no pointers.
+        unsafe { GetAsyncKeyState(VK_LBUTTON as i32) < 0 }
+    }
+    #[cfg(not(target_os = "windows"))]
+    false
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
-        .plugin(tauri_plugin_opener::init())
-        .invoke_handler(tauri::generate_handler![greet])
+        .invoke_handler(tauri::generate_handler![left_mouse_down])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

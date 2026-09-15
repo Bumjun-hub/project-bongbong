@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local configuration and generated build/cache files
+.env
+.env.*
+!.env.example
+target/
+*.tsbuildinfo
+Thumbs.db
+Desktop.ini
