@@ -1,4 +1,4 @@
-// Native dragging can consume DOM pointerup. Read only the left button.
+// Detect release even when the cursor leaves the character window.
 #[tauri::command]
 async fn left_mouse_down() -> bool {
     #[cfg(target_os = "windows")]

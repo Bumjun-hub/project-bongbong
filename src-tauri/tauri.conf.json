@@ -14,8 +14,8 @@
       {
         "title": "project-bongbong",
         "label": "main",
-        "width": 180,
-        "height": 220,
+        "width": 288,
+        "height": 320,
         "transparent": true,
         "decorations": false,
         "alwaysOnTop": true,

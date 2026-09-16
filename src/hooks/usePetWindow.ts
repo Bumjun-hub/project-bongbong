@@ -7,7 +7,7 @@ import type { CharacterState, Direction } from "../types/character";
 export function usePetWindow(state: CharacterState, isHolding: boolean, holding: RefObject<boolean>) {
   const [direction, setDirection] = useState<Direction>(1);
   const facing = useRef<Direction>(1);
-  // Native drag waits for the last position write, preventing a stale walk jump.
+  // Live drag waits for the last position write, preventing a stale walk jump.
   const pending = useRef<Promise<void>>(Promise.resolve());
   const waitForMovement = useCallback(() => pending.current, []);
   const clampToScreen = useCallback(async () => {

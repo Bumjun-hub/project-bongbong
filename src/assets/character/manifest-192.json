@@ -1,0 +1,274 @@
+{
+  "characterId": "bongbong",
+  "engine": "component-row",
+  "game_input": "sprite-sheet-alpha.png",
+  "degraded_static_fallback": false,
+  "curation_applied": false,
+  "frame_variant": "pixel",
+  "sprite_sheet_alpha": "sprite-sheet-alpha.png",
+  "sprite_sheet_alpha_report": "sprite-sheet-alpha.report.json",
+  "base_image": "base-source.png",
+  "cell": {
+    "shape": "square",
+    "width": 192,
+    "height": 192,
+    "safe_margin_x": 18,
+    "safe_margin_y": 18,
+    "size": 192,
+    "safe_margin": 18
+  },
+  "chroma_key": {
+    "name": "green",
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "selection": "auto",
+    "score": 215.51,
+    "min_subject_distance": 205.54,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 14388
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 202.77,
+        "min_subject_distance": 197.08,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 215.51,
+        "min_subject_distance": 205.54,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 173.49,
+        "min_subject_distance": 169.99,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 132.92,
+        "min_subject_distance": 126.97,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "animation": {
+    "cellWidth": 192,
+    "cellHeight": 192,
+    "columns": 8,
+    "rows": {
+      "idle": {
+        "row": 0,
+        "frames": 4,
+        "fps": 4,
+        "durations_ms": [
+          250,
+          250,
+          250,
+          250
+        ],
+        "loop": true,
+        "frame_variant": "pixel"
+      },
+      "walk": {
+        "row": 1,
+        "frames": 8,
+        "fps": 8,
+        "durations_ms": [
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "loop": true,
+        "frame_variant": "pixel"
+      },
+      "sleep": {
+        "row": 2,
+        "frames": 4,
+        "fps": 2,
+        "durations_ms": [
+          500,
+          500,
+          500,
+          500
+        ],
+        "loop": true,
+        "frame_variant": "pixel"
+      },
+      "wave": {
+        "row": 3,
+        "frames": 5,
+        "fps": 6,
+        "durations_ms": [
+          167,
+          167,
+          167,
+          167,
+          167
+        ],
+        "loop": false,
+        "frame_variant": "pixel"
+      }
+    }
+  },
+  "frame_layout": {
+    "sheetWidth": 1536,
+    "sheetHeight": 768,
+    "cellWidth": 192,
+    "cellHeight": 192,
+    "rows": {
+      "idle": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 192,
+          "y": 0,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 384,
+          "y": 0,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 576,
+          "y": 0,
+          "w": 192,
+          "h": 192
+        }
+      ],
+      "walk": [
+        {
+          "x": 0,
+          "y": 192,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 192,
+          "y": 192,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 384,
+          "y": 192,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 576,
+          "y": 192,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 768,
+          "y": 192,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 960,
+          "y": 192,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 1152,
+          "y": 192,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 1344,
+          "y": 192,
+          "w": 192,
+          "h": 192
+        }
+      ],
+      "sleep": [
+        {
+          "x": 0,
+          "y": 384,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 192,
+          "y": 384,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 384,
+          "y": 384,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 576,
+          "y": 384,
+          "w": 192,
+          "h": 192
+        }
+      ],
+      "wave": [
+        {
+          "x": 0,
+          "y": 576,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 192,
+          "y": 576,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 384,
+          "y": 576,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 576,
+          "y": 576,
+          "w": 192,
+          "h": 192
+        },
+        {
+          "x": 768,
+          "y": 576,
+          "w": 192,
+          "h": 192
+        }
+      ]
+    }
+  }
+}

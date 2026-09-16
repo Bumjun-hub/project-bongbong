@@ -1,4 +1,4 @@
 [[permission]]
 identifier = "allow-left-mouse-down"
-description = "Read left mouse button state to finish a native character drag."
+description = "Read left mouse button state to finish a live character drag."
 commands.allow = ["left_mouse_down"]

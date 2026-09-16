@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "bongbong",
+    "description": "",
+    "base_image": "base-source.png"
+  },
+  "cell": {
+    "shape": "square",
+    "width": 192,
+    "height": 192,
+    "safe_margin_x": 18,
+    "safe_margin_y": 18,
+    "size": 192,
+    "safe_margin": 18
+  },
+  "chroma_key": {
+    "name": "green",
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "selection": "auto",
+    "score": 215.51,
+    "min_subject_distance": 205.54,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 14388
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 202.77,
+        "min_subject_distance": 197.08,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 215.51,
+        "min_subject_distance": 205.54,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 173.49,
+        "min_subject_distance": 169.99,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 132.92,
+        "min_subject_distance": 126.97,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "states": {
+    "idle": {
+      "frames": 4,
+      "fps": 4,
+      "loop": true,
+      "action": "Remain standing exactly like the base reference, feet and body fixed. Frame 1 eyes open, frame 2 eyes half closed, frame 3 eyes fully closed for a natural blink behind the same black glasses, frame 4 eyes open again. Hands remain in the same relaxed position. Very subtle breathing only. Preserve the exact face, hairstyle, glasses, red shirt, silver necklace, blue jeans and black-white shoes."
+    },
+    "walk": {
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "action": "Complete coherent human walking cycle facing RIGHT, three-quarter right view matching the base identity. Hands out of pockets swinging naturally opposite the legs. Frames: left heel forward contact; left weight down; right leg passing; right knee forward up; right heel forward contact; right weight down; left leg passing; left knee forward up then return to first. Clearly alternate the two legs and two arms, preserve limb lengths. Walk in place, equal body size, stable floor level. No skating, no repeated standing poses. Preserve the exact face, hairstyle, glasses, red shirt, silver necklace, blue jeans and black-white shoes."
+    },
+    "sleep": {
+      "frames": 4,
+      "fps": 2,
+      "loop": true,
+      "action": "Same character sitting comfortably on the ground with bent knees and hands resting on lap, head gently bowed, eyes CLOSED behind the same glasses, asleep. Four almost identical poses with tiny chest breathing, no waking up. No bed, pillow, symbols, Z letters, bubbles or detached effects. Preserve exact hairstyle, glasses, red shirt, silver necklace, blue jeans and black-white shoes. Keep head and body proportions consistent with standing base."
+    },
+    "wave": {
+      "frames": 5,
+      "fps": 6,
+      "loop": false,
+      "action": "Friendly greeting with ONE hand while standing facing the viewer three-quarter right like the base. Frame 1 relaxed original pose; frame 2 right hand rises beside face; frame 3 palm faces viewer and tilts outward; frame 4 palm tilts inward; frame 5 hand lowers back to original resting pose. Feet stay fixed, other arm stays relaxed. Exactly two arms and five natural fingers on the raised hand. Preserve exact face, hairstyle, glasses, red shirt, silver necklace, blue jeans and black-white shoes."
+    }
+  },
+  "style": "match the attached base/anchor reference image EXACTLY: same pixel density (logical pixel block size), same body proportions, same outline weight, same palette, same shading style, same level of detail. Do not restyle, do not change proportions, do not add or remove detail density.",
+  "layout": "taxonomy/v1",
+  "fit": {
+    "resample": "kcentroid",
+    "align_y": "bottom",
+    "pixel_unfake": false
+  },
+  "chroma": {
+    "mode": "rgb",
+    "unmix_reach": 4,
+    "spill_max_fraction": 0.005
+  }
+}
